@@ -2,7 +2,9 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<LangVersion>latest</LangVersion> 
-		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks> 
+  	<Platforms>AnyCPU;x64</Platforms>
+		<PlatformTarget>x64</PlatformTarget>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Avalonia" Version="0.10.18" />
