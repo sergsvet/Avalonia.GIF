@@ -6,6 +6,8 @@
 // The rest of the source file is licensed under MIT License.
 // Copyright (C) 2018 Jumar A. Macato, All Rights Reserved.
 
+using Avalonia;
+using Avalonia.Media.Imaging;
 using System;
 using System.Buffers;
 using System.Collections.Generic;
@@ -15,8 +17,6 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
-using Avalonia;
-using Avalonia.Media.Imaging;
 using static AvaloniaGif.Extensions.StreamExtensions;
 
 namespace AvaloniaGif.Decoding
@@ -158,7 +158,7 @@ namespace AvaloniaGif.Decoding
                     continue;
 
                 if (prevFrame.FrameDisposalMethod == FrameDisposal.Background)
-                { 
+                {
                     ClearArea(prevFrame.Dimensions);
                     continue;
                 }

@@ -1,12 +1,12 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO;
-using Avalonia;
+﻿using Avalonia;
 using Avalonia.Animation;
 using Avalonia.Controls;
 using Avalonia.Media;
 using Avalonia.Media.Imaging;
 using Avalonia.Threading;
+using System;
+using System.Diagnostics;
+using System.IO;
 
 namespace AvaloniaGif
 {
@@ -114,7 +114,7 @@ namespace AvaloniaGif
         {
             Dispatcher.UIThread.Post(InvalidateMeasure, DispatcherPriority.Background);
             Dispatcher.UIThread.Post(InvalidateVisual, DispatcherPriority.Background);
-            
+
             if (_hasNewSource)
             {
                 StopAndDispose();

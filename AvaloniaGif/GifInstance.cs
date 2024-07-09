@@ -1,14 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading;
 using Avalonia;
 using Avalonia.Animation;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
 using AvaloniaGif.Decoding;
 using JetBrains.Annotations;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading;
 
 namespace AvaloniaGif
 {
